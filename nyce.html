@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Samarpit</title>
+    <link rel="shortcut icon" href="img/a-icon.ico" />
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll"  href="index.html">Home</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 text-center" style="text-align: left">
+                    <!-- <hr class="light"> -->
+                    <h2 style="font-style: italic">Fraud Detection Analysis<h2>
+                    <h4>CONCEPT</h4>
+                    <p class="text-faded" style="font-size: small">
+                    The project focuses on building an interactive fraud detection and monitoring system using Power BI to identify, analyze, and visualize patterns in fraudulent financial transactions. It combines data preparation, feature engineering, and advanced analytics to help organizations detect anomalies early, understand fraud trends across different dimensions (time, amount, location, category), and make proactive prevention decisions.
+                    <p class="text-faded" style="font-size: small">
+                   The dataset was sourced from a publicly available credit card transactions dataset containing both fraudulent and non-fraudulent records. It spans multiple transaction categories, locations, and time periods, providing rich detail for fraud pattern analysis. The data includes transaction-specific attributes such as transaction_id, transaction_time, transaction_amount, category, credit_card_number, and is_fraud indicators.
+                    <br><br>
+                    For time-based analysis, the transaction_time field was processed to extract features like hour of transaction, enabling the identification of high-risk fraud periods. Location data was mapped to city and country levels for geographical fraud hotspot detection. Risk scores were included to evaluate the severity of fraudulent activity, while transaction categories helped in determining sector-wise vulnerabilities.                    <br><br>
+                    Data preparation was performed in Power Query, including cleaning, handling missing values, and optimizing relationships for a star-schema model. This allowed the integration of multiple tables—transactions, risk metrics, and location mappings—into a unified analytics solution for in-depth, interactive fraud monitoring in Power BI.                    </p>
+                    <h4>APPROACH</h4>
+                    <p class="text-faded" style="font-size: small">
+Like mentioned earlier, the dataset consists of transactional records labeled as fraudulent or non-fraudulent. Our initial ideas were to identify peak fraud hours and create geographical heatmaps to pinpoint fraud-prone regions. While these were effective from a visualization perspective, we wanted to expand the scope into a more analytical problem statement.                    <br><br>
+                    Fraud Risk Pattern Analysis:- 
+Our first analytical approach was to determine recurring fraud patterns based on transaction categories and amounts. This required segmenting transactions by time-of-day, location, and category to observe potential risk clusters. While this revealed useful trends, we realized the dataset allowed us to explore deeper temporal features that could provide higher business impact.
+                    <br><br>
+                   Our overall approach combined data cleaning, feature engineering, and correlation analysis through Power BI’s DAX-driven measures. This not only enabled clearer separation between fraudulent and legitimate transactions but also provided a real-time, interactive environment for stakeholders to monitor fraud risks and take proactive measures.
+                    </p>
+                     <h4>ALGORITHMS & TECHNIQUES USED</h4>
+                    <p class="text-faded" style="font-size: small">
+To analyze the transaction data and detect fraud patterns, we used the following:                    <ul class="text-faded" style="font-size: small">
+                        <li>
+Data Preparation & Modeling                            <ul>
+                                <li>Power Query for cleaning, transformation, and feature engineering</li>
+                                <li>Star schema data modeling for optimized relationships</li>
+                                
+                            </ul>
+                        </li>
+                        <li>
+                        DAX Calculations
+                            <ul>
+                                <li>Fraud rate calculation by time, category, and location</li>
+                                <li>KPI metrics for high-risk period tracking</li>
+                                <li>Cumulative fraud trend analysis</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </p>
+                   <a href="https://github.com/SamarpitTrivedi/Credit-Card-Fraud-Detection"class="btn btn-primary btn-xl page-scroll" target="_blank">Link to github</a>
+                </div>
+                <div class="col-lg-4 text-center" style="padding-top: 100px">
+                <img src="img/nyce/nyce1.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Visualization</p>
+                <img src="img/nyce/nyce2.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Amount, Time, Risk & Category Insights</p>
+                <img src="img/nyce/nyce3.png" class="img-responsive" alt="" style="margin :auto">
+                <p>Fraud Distribution, Impact, and Timing Probability</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row" class="call-to-action">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Get In Touch!</h2>
+                    <hr class="primary">
+                </div>
+                <div class="col-lg-2 col-lg-offset-3 text-center">
+                    <a href="https://github.com/SamarpitTrivedi" class="fa fa-github fa-3x wow bounceIn"></a>
+                </div>
+                <div class="col-lg-2  text-center">
+                    <a href="https://www.linkedin.com/in/samarpittrivedi" class="fa fa-linkedin fa-3x wow bounceIn"></a>
+                </div>
+                <!--div class="col-lg-1 text-center">
+                    <a class="fa fa-phone fa-3x wow bounceIn"></i>
+                </div-->
+                <div class="col-lg-2 text-center">
+                    <a href="mailto:samarpittrivedi2004@gmail.com" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+</body>
+
+</html>
