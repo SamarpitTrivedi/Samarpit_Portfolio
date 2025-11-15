@@ -529,6 +529,8 @@ body.dark-theme .navbar-default .nav > li > a:hover,
 body.dark-theme .navbar-default .nav > li > a:focus:hover {
     color: var(--accent-color);
 }
+/* =============== Timeline / Experience Section (Simple Layout) =============== */
+
 /* =============== Timeline / Experience Section =============== */
 
 #experience {
@@ -544,29 +546,29 @@ body.dark-theme .navbar-default .nav > li > a:focus:hover {
 .timeline-line {
     content: '';
     position: absolute;
-    width: 2px;
+    width: 5px;
     background-color: #ddd; /* Light mode line */
     top: 0;
     bottom: 0;
-    left: 50%;
-    margin-left: -1px;
+    left: 55%;
+    margin-left: 1px;
 }
 
 .timeline-item {
     padding: 10px 40px;
     position: relative;
-    width: 50%;
-    margin-bottom: 50px;
+    width: 55%;
+    margin-bottom: 100px;
 }
 
 .timeline-item.left {
     left: 0;
     padding-right: 70px;
-    text-align: right;
+    text-align: left;
 }
 
 .timeline-item.right {
-    left: 50%;
+    left: 55%;
     padding-left: 70px;
     text-align: left;
 }
@@ -577,7 +579,7 @@ body.dark-theme .navbar-default .nav > li > a:focus:hover {
     height: 40px;
     line-height: 40px;
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333;
     background-color: #f9f9f9;
@@ -598,7 +600,7 @@ body.dark-theme .navbar-default .nav > li > a:focus:hover {
 .timeline-content h3 {
     font-family: 'Merriweather', 'Georgia', serif;
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 6000;
     margin-bottom: 5px;
     /* Color is inherited from body */
 }
@@ -612,7 +614,7 @@ body.dark-theme .navbar-default .nav > li > a:focus:hover {
 
 .timeline-content p {
     font-family: 'Open Sans', 'Arial', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     line-height: 1.6;
     /* Color is inherited */
 }
@@ -636,14 +638,14 @@ body.dark-theme .navbar-default .nav > li > a:focus:hover {
 /* Responsive handling for smaller screens */
 @media (max-width: 768px) {
     .timeline-line {
-        left: 20px; /* Move line to the left */
+        left: 50px; /* Move line to the left */
         margin-left: 0;
     }
 
     .timeline-item {
         width: 100%;
-        padding-left: 70px; /* All items on the right */
-        padding-right: 25px;
+        padding-left: 90px; /* All items on the right */
+        padding-right: 55px;
     }
 
     .timeline-item.left,
@@ -656,19 +658,4 @@ body.dark-theme .navbar-default .nav > li > a:focus:hover {
     .timeline-item.right .timeline-number {
         left: 0px; /* Align numbers with the line */
     }
-}
-/* =============== Timeline List Styling =============== */
-
-.timeline-content .timeline-details {
-    /* Ensures bullets are always left-aligned, even in the right-aligned "left" column */
-    text-align: left; 
-    font-family: 'Open Sans', 'Arial', sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    padding-left: 20px; /* Standard indentation for a list */
-    margin-top: 10px;
-}
-
-.timeline-content .timeline-details li {
-    margin-bottom: 10px; /* Adds spacing between bullet points */
 }
