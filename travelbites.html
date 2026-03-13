@@ -1,136 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Samarpit</title>
-    <link rel="shortcut icon" href="img/a-icon.ico" />
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-
-    <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    <meta name="description" content="Zomato Analysis project by Samarpit">
+    <meta name="author" content="Samarpit">
+    <title>Zomato Analysis | Samarpit</title>
+    <link rel="shortcut icon" href="img/a-icon.ico">
+    <link rel="stylesheet" href="shared-portfolio.css">
 </head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll"  href="index.html">Home</a>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container"><div class="navbar-shell">
+            <a class="brand" href="index.html"><span class="brand-mark">ST</span><span>Samarpit</span></a>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel"><span class="sr-only">Toggle menu</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+            <div class="nav-panel" id="navPanel">
+                <div class="nav-links"><a href="index.html">Home</a><a href="#overview">Overview</a><a href="#gallery">Gallery</a><a href="#links">Links</a><a href="#contact">Contact</a></div>
+                <div class="nav-actions"><a class="button button-secondary" href="resume/Samarpit_resume-1.pdf" download>Download Resume</a></div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
+        </div></div>
     </nav>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 text-center" style="text-align: left">
-                    <!-- <hr class="light"> -->
-                    <h2 style="font-style: italic">Zomato Data Analysis<h2>
-                    <h4>CONCEPT</h4>
-                    <p class="text-faded" style="font-size: small">
-                    This project uses Power BI to create an interactive sales analysis system for Zomato's restaurant, cuisine, and rating data. The goal is to help stakeholders understand key sales trends and make informed decisions. The dataset, sourced from a publicly available Zomato database, includes attributes like restaurant_name, city, cuisine, and aggregate_rating. Data was prepared in Power Query and modeled using a star schema to integrate various tables for in-depth analysis.</p>
-                    <h4>APPROACH</h4>
-                    <p class="text-faded" style="font-size: small">
-                    Our approach involved moving from basic visualizations, like identifying top countries by restaurant count, to more analytical insights. We focused on analyzing restaurant and cuisine patterns by segmenting data based on restaurant offerings and customer ratings. The overall process combined data cleaning and feature engineering with DAX-driven measures to create a real-time, interactive environment for monitoring sales trends.</p>
-                    <h4>ALGORITHMS & TECHNIQUES USED</h4>
-                    <p class="text-faded" style="font-size: small">
-                    To analyze the data, we used:</p>            
-                    <ul class="text-faded" style="font-size: small">
-                        <li>Data Preparation & Modeling: Power Query for data cleaning and transformation, and a star schema for optimized relationships.</li>
-                        <li>DAX Calculations: KPI metrics for total restaurants, cities, and cuisines, as well as measures for average cost, cuisine count, and aggregate ratings.</li>
-                    </ul>
- <a href="https://github.com/SamarpitTrivedi/Zomato-data-analysis" class="btn btn-primary btn-xl page-scroll" target="_blank">Link to project</a>
+    <main class="page-shell">
+        <section class="hero"><div class="container"><div class="hero-panel">
+            <div class="hero-copy fade-up">
+                <div class="eyebrow">Data Cleaning</div>
+                <h1>Zomato Analysis</h1>
+                <p class="hero-summary">A Power BI analysis project focused on restaurant performance, cuisine trends, ratings, and regional patterns inside Zomato data.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="https://github.com/SamarpitTrivedi/Zomato-data-analysis" target="_blank" rel="noreferrer">View GitHub</a>
+                    <a class="button button-secondary" href="index.html#projects">Back to Projects</a>
                 </div>
-                <div class="col-lg-4 text-center">
-                <img src="img/travelbites/user_flow.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Cuisines and Aggregate Rating by Restaurant</p>
-                <img src="img/travelbites/affinity_diagram.png" class="img-responsive" alt="" style="margin :auto">
-                <p>Zomato Sales Analysis: Key Performance Indicators and Regional Trends</p>
+                <div class="meta-grid">
+                    <div class="meta-card"><span>Platform</span>Power BI analysis built on cleaned and modeled restaurant data.</div>
+                    <div class="meta-card"><span>Focus</span>Restaurant counts, cuisines, ratings, costs, and regional trends.</div>
+                    <div class="meta-card"><span>Outcome</span>Interactive reporting for clearer restaurant and cuisine performance insight.</div>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-media fade-up"><img src="img/travelbites.png" alt="Zomato Analysis banner"></div>
+        </div></div></section>
 
-    <section id="contact">
-        <div class="container">
-            <div class="row" class="call-to-action">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Get In Touch!</h2>
-                    <hr class="primary">
-                </div>
-                <div class="col-lg-2 col-lg-offset-3 text-center">
-                    <a href="https://github.com/SamarpitTrivedi" class="fa fa-github fa-3x wow bounceIn"></a>
-                </div>
-                <div class="col-lg-2  text-center">
-                    <a href="https://www.linkedin.com/in/samarpittrivedi" class="fa fa-linkedin fa-3x wow bounceIn"></a>
-                </div>
-                <!--div class="col-lg-1 text-center">
-                    <a class="fa fa-phone fa-3x wow bounceIn"></i>
-                </div-->
-                <div class="col-lg-2 text-center">
-                    <a href="mailto:samarpittrivedi2004@gmail.com" class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></a>
-                </div>
+        <section class="section" id="overview"><div class="container"><div class="content-grid">
+            <div class="content-stack">
+                <article class="content-card fade-up"><h4>Concept</h4><h3>Restaurant analytics built for operational clarity.</h3><p>The project transforms a public Zomato dataset into a Power BI reporting system that helps stakeholders understand restaurant patterns, cuisine distribution, and rating behavior.</p></article>
+                <article class="content-card fade-up"><h4>Approach</h4><h3>From broad visuals to deeper restaurant and cuisine insights.</h3><p>The workflow moved from basic country-level counts toward more analytical segmentation by restaurant offerings, customer ratings, and overall service mix.</p></article>
             </div>
-        </div>
-    </section>
+            <div class="content-stack">
+                <article class="section-card fade-up"><h4>Techniques Used</h4><ul class="list"><li>Power Query for cleaning and transformation.</li><li>Star-schema modeling for structured analysis.</li><li>DAX KPIs for total restaurants, cities, cuisines, ratings, and cost metrics.</li></ul></article>
+                <article class="section-card fade-up"><h4>Business Value</h4><ul class="list"><li>Understand cuisine and restaurant concentration by region.</li><li>Track ratings and cost behavior at a usable summary level.</li><li>Support better restaurant and platform decision-making.</li></ul></article>
+            </div>
+        </div></div></section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+        <section class="section" id="gallery"><div class="container"><div class="media-grid">
+            <figure class="figure-card fade-up"><img src="img/travelbites/user_flow.png" alt="Cuisines and rating analysis"><figcaption>Cuisine and aggregate rating patterns by restaurant.</figcaption></figure>
+            <figure class="figure-card fade-up"><img src="img/travelbites/affinity_diagram.png" alt="Zomato KPI and trend dashboard"><figcaption>Key performance indicators and regional trend analysis for restaurant data.</figcaption></figure>
+        </div></div></section>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+        <section class="section" id="links"><div class="container"><div class="link-grid">
+            <article class="link-card fade-up"><h3>GitHub Repository</h3><p>Explore the project files and supporting material behind the analysis.</p><a class="button button-primary" href="https://github.com/SamarpitTrivedi/Zomato-data-analysis" target="_blank" rel="noreferrer">Open GitHub</a></article>
+            <article class="link-card fade-up"><h3>Portfolio Home</h3><p>Return to the main portfolio and continue browsing the project collection.</p><a class="button button-secondary" href="index.html#projects">Back to Portfolio</a></article>
+        </div></div></section>
 
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
+        <section class="contact-section" id="contact"><div class="container"><div class="contact-card fade-up">
+            <div class="eyebrow" style="justify-content:center;">Contact</div>
+            <h2>Need reporting that makes messy operational data easier to act on?</h2>
+            <div class="contact-links">
+                <a class="social-link" href="https://www.linkedin.com/in/SamarpitTrivedi" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a class="social-link" href="https://github.com/SamarpitTrivedi" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="social-link" href="mailto:samarpittrivedi2004@gmail.com">Email</a>
+            </div>
+        </div></div></section>
+    </main>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/creative.js"></script>
-
+    
+    <script src="shared-portfolio.js"></script>
 </body>
-
 </html>
